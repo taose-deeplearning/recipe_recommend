@@ -9,6 +9,13 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
+gem 'bootstrap-sass'
+gem 'sprockets-rails'
+gem 'sprockets-es6'
+gem 'haml-rails'
+gem 'erb2haml'
+gem 'action_args'
+gem 'active_decorator'
 
 group :development, :test do
   gem 'pry'
@@ -27,6 +34,9 @@ group :development do
   gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'web-console'
+  gem 'listen', '~> 3.0.5'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :test do
