@@ -32,6 +32,7 @@ module RecipeRecommend
       g.fixture_replacement :factory_girl, dir: "spec/factories"
     end
 
+    I18n.enforce_available_locales = true
     config.i18n.default_locale = :ja
   end
 end
