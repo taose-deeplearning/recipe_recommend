@@ -16,6 +16,7 @@ gem 'haml-rails'
 gem 'erb2haml'
 gem 'action_args'
 gem 'active_decorator'
+gem 'rakuten_web_service'
 
 group :development, :test do
   gem 'pry'
