@@ -18,6 +18,7 @@ gem 'action_args'
 gem 'active_decorator'
 gem 'rakuten_web_service'
 gem 'acts-as-taggable-on'
+gem 'kaminari'
 
 group :development, :test do
   gem 'pry'

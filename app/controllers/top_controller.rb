@@ -3,8 +3,8 @@ class TopController < ApplicationController
     render json: 'index'
   end
 
-  def search(query)
-    recipes = Recipe.tagged_with(query)
+  def search(query, page=1, per=10)
+    recipes = Recipe.tagged_with(query).page(page).per(per)
     render json: recipes
   end
 end
