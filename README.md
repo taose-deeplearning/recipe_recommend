@@ -79,3 +79,13 @@ $ bundle exec rails s
 ## JSONの取得
 
 `http://localhost:3000/search?query=玉ねぎ`のようにするとレシピの一覧をJSONで取得出来る。
+
+### フォーマット
+
+```
+http://localhost:3000/search?query[]=玉ねぎ&query[]=にんじん&query[]=%じゃがいも&page=2&per=5
+```
+
+- query: 食材、配列にして複数タグを含むものを検索出来る
+- page: 検索のページ番号
+- per: 1ページあたりのページ数
